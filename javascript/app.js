@@ -94,9 +94,10 @@ $.ajax({
 
 };
 
-$(".gif").on("click", function() {
+$(document).on("click", ".gif", function() {
 
     var state = $(this).attr("data-state");
+    console.log(state);
 
     if (state === "still") {
         var animate = $(this).attr("data-animate");
