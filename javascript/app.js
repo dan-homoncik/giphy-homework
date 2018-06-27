@@ -23,7 +23,7 @@ function renderButtons () {
 // click handler for new foods
 $("#addFood").on("click", function(event) {
 
-
+    if ($(foodInput).val() != "") {
         event.preventDefault();
 
         var newFood = [$("#foodInput").val().trim()];
@@ -32,6 +32,7 @@ $("#addFood").on("click", function(event) {
 
         $("#foodInput").val("");
         renderButtons();
+    }
   });
 
 renderButtons();
