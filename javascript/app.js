@@ -23,14 +23,15 @@ function renderButtons () {
 // click handler for new foods
 $("#addFood").on("click", function(event) {
 
-    event.preventDefault();
 
-    var newFood = [$("#foodInput").val().trim()];
+        event.preventDefault();
 
-    foodArray.push(newFood);
+        var newFood = [$("#foodInput").val().trim()];
 
-    $("#foodInput").val("");
-    renderButtons();
+        foodArray.push(newFood);
+
+        $("#foodInput").val("");
+        renderButtons();
   });
 
 renderButtons();

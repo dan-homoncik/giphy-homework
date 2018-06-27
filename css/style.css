@@ -1,5 +1,6 @@
 body {
     background: url("../images/food-colleage.jpg");
+    font-size: 16px;
 }
 
 .food {
@@ -9,7 +10,33 @@ body {
     border-color: white;
     border-radius: 8px;
     display: inline-block;
-    font-size: 16px;
+
+}
+
+#foodForm {
+    padding: 10px;
+}
+
+#addFood {
+    padding: 5px;
+    background-color: #008cba;
+    color: white;
+    border-color: white;
+    border-radius: 8px;
+    display: inline-block;
+
+}
+
+label {
+    color: #008cba;
+    font-weight: 700;
+
+}
+
+p {
+    font-size: 20px;
+    color: #008cba;
+    font-weight: 700;
 }
 
 .gif-group {
