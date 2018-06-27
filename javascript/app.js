@@ -29,6 +29,7 @@ $("#addFood").on("click", function(event) {
 
     foodArray.push(newFood);
 
+    $("#foodInput").val("");
     renderButtons();
   });
 
@@ -56,9 +57,12 @@ $.ajax({
     // must loop through the array and it's objects to grab info
 
 
-    var foodDiv = $("<div>");
+
 
     for (var i = 0; i < response.data.length; i++) {
+
+        var foodDiv = $("<div>");
+        foodDiv.addClass("gif-group");
 
         // get the still and animate gif urls
 
@@ -86,9 +90,11 @@ $.ajax({
         image.addClass("gif");
 
         foodDiv.append(gifRating, image);
+
+        $("#foodGifs").prepend(foodDiv);
     }
 
-    $("#foodGifs").prepend(foodDiv);
+
 
   });
 

@@ -1,0 +1,19 @@
+body {
+    background: url("../images/food-colleage.jpg");
+}
+
+.food {
+    padding: 5px;
+    background-color: #008cba;
+    color: white;
+    border-color: white;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.gif-group {
+    float: left;
+    padding: 15px;
+}
+
